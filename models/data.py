@@ -1,23 +1,34 @@
-clients: list[dict[str, str]] = [
-    {'name': 'Staś', 'surname': 'Grzymski',  'location':'Konin', 'latitdue': 18.234, 'longitud': 16.422 },
-    {'name': 'Kacper', 'surname': 'Macioch', 'location':'Ząbki', 'latitdue': 15.234, 'longitud': 18.422},
-    {'name': 'Michał', 'surname': 'Krzywiński', 'location':'Brodnica', 'latitdue': 11.234, 'longitud': 17.422},
-    {'name': 'Tymon', 'surname': 'Leszczyc',  'location':'Toruń', 'latitdue': 16.234, 'longitud': 13.422},
-    {'name': 'Michał', 'surname': 'Lębryk',  'location':'Lublin', 'latitdue': 14.234, 'longitud': 12.422},
+companies: list[dict] = [
+    {"name": "budpol", "location": "Warszawa", 'latitude': 21.008, 'longitude': 52.232, "company": "budpol"},
+    {"name": "mirex", "location": "Sopot", 'latitude': 18.333, 'longitude': 54.263, "company": "mirex"},
+    {"name": "mixbud", "location": "Kraków", 'latitude': 19.938, 'longitude': 50.061, "company": "mixbud"},
+    {"name": "januszbud", "location": "Gdynia", 'latitude': 18.539, 'longitude': 54.519, "company": "januszbud"},
+    {"name": "budex", "location": "Gdańsk", 'latitude': 18.645, 'longitude': 54.347, "company": "budex"},
+
 ]
 
-workers: list[dict[str, str]] = [
-    {'name': 'Ivan', 'surname': 'Skolsky', 'location':'Konin', 'latitdue': 10.234, 'longitude': 14.422},
-    {'name': 'Michael', 'surname': 'Macioch',  'location':'Ząbki', 'latitdue': 11.234, 'longitude': 12.422},
-    {'name': 'Sasha', 'surname': 'mikrkov', 'location':'Brodnica', 'latitdue': 13.234, 'longitude': 15.422},
-    {'name': 'fredrich', 'surname': 'julak', 'location':'Toruń', 'latitdue': 13.234, 'longitude': 17.422},
-    {'name': 'Szymon', 'surname': 'Lębryk', 'location':'Lublin', 'latitdue': 18.234, 'longitude': 19.422},
+customers: list[dict] = [
+    {"name": "Martyna", "surname": "Kaleta", "location": "Warszawa", 'latitude': 21.008, 'longitude': 52.232, "my_company": "budpol"},
+    {"name": "Marcin", "surname": "Maciaszek", "location": "Warszawa", 'latitude': 21.008, 'longitude': 52.232, "my_company": "budpol"},
+    {"name": "Miroslaw", "surname": "Makowski", "location": "Sopot", 'latitude': 18.333, 'longitude': 54.263, "my_company": "mirex"},
+    {"name": "Tomasz", "surname": "Problem", "location": "Sopot", 'latitude': 18.333, 'longitude': 54.263, "my_company": "mirex"},
+    {"name": "Joanna", "surname": "Buda", "location": "Kraków", 'latitude': 19.938, 'longitude': 50.061, "my_company": "mixbud"},
+    {"name": "Agata", "surname": "Fonk", "location": "Kraków", 'latitude': 19.938, 'longitude': 50.061, "my_company": "mixbud"},
+    {"name": "Michael", "surname": "Majchrowski", "location": "Gdynia", 'latitude': 18.539, 'longitude': 54.519, "my_company": "januszbud"},
+    {"name": "Kewin", "surname": "Czajka", "location": "Gdynia", 'latitude': 18.539, 'longitude': 54.519, "my_company": "januszbud"},
+    {"name": "Waldimir", "surname": "Markowski", "location": "Gdańsk", 'latitude': 51.112, 'longitude': 15.112, "my_company": "budex"},
+    {"name": "Ivan", "surname": "Powlowski", "location": "Gdańsk", 'latitude': 51.112, 'longitude': 15.112, "my_company": "budex"},
 ]
 
-companies: list[dict[str, str]] = [
-    {'name': 'budpol','location':'Konin', 'latitdue': 11.234, 'longitude': 14.422},
-    {'name': 'januszbud','location':'Ząbki', 'latitdue': 14.234, 'longitude': 16.422},
-    {'name': 'mirbudex', 'location':'Brodnica', 'latitdue': 16.234, 'longitude': 14.422},
-    {'name': 'mixbud', 'location':'Toruń', 'latitdue': 14.234, 'longitude': 13.422},
-    {'name': 'markwork', 'location':'Lublin', 'latitdue': 16.234, 'longitude': 12.422},
+employees: list[dict] = [
+    {"name": "Maksiu", "surname": "Alfa", "location": "Warszawa", 'latitude': 21.008, 'longitude': 52.232, "workplace": "budpol"},
+    {"name": "Grzegorz", "surname": "Tokio", "location": "Warszawa", 'latitude': 21.008, 'longitude': 52.232, "workplace": "budpol"},
+    {"name": "Zbyszek", "surname": "Supernova", "location": "Sopot", 'latitude': 18.333, 'longitude': 54.263, "workplace": "mirex"},
+    {"name": "Adam", "surname": "Sloneczko", "location": "Sopot", 'latitude': 18.333, 'longitude': 54.263, "workplace": "mirex"},
+    {"name": "Piotr", "surname": "Delta", "location": "Kraków", 'latitude': 19.938, 'longitude': 50.061, "workplace": "mixbud"},
+    {"name": "Sebastian", "surname": "Fetel", "location": "Kraków", 'latitude': 19.938, 'longitude': 50.061, "workplace": "mixbud"},
+    {"name": "Grzegorz", "surname": "Floryda", "location": "Gdynia", 'latitude': 18.539, 'longitude': 54.519, "workplace": "januszbud"},
+    {"name": "Michal", "surname": "Psiarski", "location": "Gdynia", 'latitude': 18.539, 'longitude': 54.519, "workplace": "januszbud"},
+    {"name": "Pawel", "surname": "Markowski", "location": "Gdańsk", 'latitude': 18.645, 'longitude': 54.347, "workplace": "budex"},
+    {"name": "Miroslaw", "surname": "Solski", "location": "Gdańsk", 'latitude': 18.645, 'longitude': 54.347, "workplace": "budex"},
 ]
